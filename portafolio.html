@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/moder-normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-img.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- email SVG -->
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg"
+    overflow="hidden">
+    <defs>
+      <symbol id="email" width="16" height="12" viewBox="0 0 16 12">
+        <path fill="#2196F3"
+          d="M14.5 0h-13C.7 0 0 .7 0 1.5v9c0 .8.7 1.5 1.5 1.5h13c.8 0 1.5-.7 1.5-1.5v-9c0-.8-.7-1.5-1.5-1.5Zm0 1h.2L8 6.8 1.3 1h13.2Zm0 10h-13a.5.5 0 0 1-.5-.5V2.1l6.7 5.8a.5.5 0 0 0 .6 0L15 2v8.4c0 .3-.2.5-.5.5Z" />
+      </symbol>
+      <!-- cellphon  SVG -->
+      <symbol id="cellphon" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+          fill="#757575" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header>
+    <!-- logo -->
+    <a href="index.html" class="logo"> WebStudio</a>
+    <!-- menu -->
+    <nav class="header-nav">
+      <ul class="header-nav-ul">
+        <li><a href="index.html" class="link"> Estudio</a></li>
+        <li class="logo">
+          <a href="portafolio.html" class="link">PortaFolio</a>
+        </li>
+        <li><a href="index.html" class="link"> Contactos</a></li>
+      </ul>
+    </nav>
+    <!-- contactenos -->
+    <ul class="header-nav-social">
+      <!--email svg-->
+      <li>
+        <a class="link" href="mailto:info@devstudio.com">
+          <svg class="icon-email">
+            <use href="./images/icons.svg#email"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+      </li>
+      <!-- cellphon svg -->
+      <li class="svg-padding ">
+        <a href="mailto:info@devstudio.com" class="link ">
+          <svg class="icon-cellphon">
+            <use href="./images/icons.svg#cellphon"></use>
+          </svg>
+          + 52 55 5529 6000
+        </a>
+      </li>
+    </ul>
+
+  </header>
+  <!--main content-->
+  <main>
+    <!--start section buttons-->
+      <div>
+      <ul class="section-buttons-ul">
+        <li class="section-buttons-li">
+          <button type="button" class="section-buttons buttons-li">
+            Todo
+          </button>
+        </li>
+        <li>
+          <button type="button" class="section-buttons buttons-li">
+            Sitios-web
+          </button>
+        </li>
+        <li class="section-buttons-li">
+          <button type="button" class="section-buttons buttons-li">
+            Aplicaciones
+          </button>
+        </li>
+        <li>
+          <button type="button" class="section-buttons buttons-li">
+            diseño
+          </button>
+        </li>
+        <li class="section-buttons-li">
+          <button type="button" class="section-buttons buttons-li">
+            Markenting
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- end section buttons -->
+    <div class="div-main-portafolio">
+      <!-- start section one -->
+      <section>
+        <ul class="section-two-ul">
+          <li class="section-two-li ">
+            <img class="section-attentin-detail-img section-two-img" src="images/Tecnoduck.jpg"
+              alt="images/Tecnoduck.jpg">
+            <div class="footer-card-portafolio">
+              <h3>Tecnoduck</h3>
+              <p>Sitio-web</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/Post-Nueva-Orleans.jpg" alt="imagen  dos  A que nos dedicamos"
+              class="section-attentin-detail-img section-two-img">
+            <div class="footer-card-portafolio">
+              <h3>Póster de Nueva Orleans vs</h3>
+              <p>Estrella Dorada</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/Restaurante-seafood.jpg" alt="imagen  uno tres que nos dedicamos"
+              class="section-attentin-detail-img section-two-img">
+            <div class="footer-card-portafolio">
+              <h3>Restaurante Seafood</h3>
+              <p>Aplicaciones</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- end  section  one -->
+      <!-- start section two -->
+      <section>
+        <ul class="section-two-ul ">
+          <li class="section-two-li">
+            <img src="images/Proyecto-prime.jpg" alt="imagen  uno A que nos dedicamos "
+              class="section-attentin-detail-img section-two-img">
+            <div class="footer-card-portafolio">
+              <h3>Proyecto Prime</h3>
+              <p>Markenting</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/proyecto-Cajas.jpg" alt="imagen  dos  A que nos dedicamos"
+              class="section-attentin-detail-img section-two-img">
+            <div class="footer-card-portafolio">
+              <h3>Proyecto Cajas </h3>
+              <p>Aplicaciones</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/Inspiracion.jpg" alt="imagen  uno tres que nos dedicamos"
+              class="section-attentin-detail-img section-two-img">
+            <div class="footer-card-portafolio">
+              <h3>La inspiracion no tiene limites</h3>
+              <p>Sitio-web</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- end  section all two-->
+
+      <!-- start section three -->
+      <section>
+        <ul class="section-two-ul">
+          <li class="section-two-li">
+            <img src="images/Edicion-limitada.jpg" class="section-attentin-detail-img section-two-img"
+              alt="imagen  uno A que nos dedicamos ">
+            <div class="footer-card-portafolio">
+              <h3>Ediciòn limitada</h3>
+              <p>Diseño</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/proyecto-LAB.jpg" class="section-attentin-detail-img section-two-img"
+              alt="imagen  dos  A que nos dedicamos">
+            <div class="footer-card-portafolio">
+              <h3>Proyecto LAB</h3>
+              <p>Markenting</p>
+            </div>
+          </li>
+          <li class="section-two-li">
+            <img src="images/Negocio-Crecimiento.jpg" class="section-attentin-detail-img section-two-img"
+              alt="imagen  uno tres que nos dedicamos">
+            <div class="footer-card-portafolio">
+              <h3>Negocio en Crecimiento</h3>
+              <p>Aplicaciones</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- end  section  three -->
+    </div>
+    <!--end div main-->
+  </main>
+
+  <!-- end  main content -->
+  <!--  start footer  -->
+  <footer>
+    <div class="container  div-foot">
+      <!-- logo  footer-->
+      <div>
+        <address>
+          <ul class="footer-address-ul ">
+          <li>
+            <a href="index.html" class="logo footer-address-li"> WebStudio</a>
+          </li>
+            <li class="footer-address-li">
+              <a href="#" class="footer-address-li-address">Caiz.Ticomán 500.ciudad de <br> Mexico, CDMX,Mexico</a>
+            </li>
+            <li class="footer-address-li">
+              <a class="li-info-whatsapp" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-address-li">
+              <a href="tel:+956548494598" class="li-info-whatsapp" >
+                +52 55 5529 6000</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <!-- footer-social-networks -->
+      <div class="div-foot-s-networks">
+        <p class="footer-text footer-text-h">ENCUENTRENOS EN </p>
+        <ul class="footer-social-networks-ul">
+          <!-- instagram -->
+          <li class="footer-img-sgv-li ">
+            <a class="redes-footer-svg-hover:hover" href="#">
+              <svg class="instragram-footer-svg">
+                <use href="./images/icons.svg#instragam-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- twiter-->
+          <li class="footer-img-sgv-li">
+            <a href="#" class="redes-footer-svg-hover:hover">
+              <svg class="instragram-footer-svg">
+                <use href="./images/icons.svg#twiter-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- facebook-->
+          <li class="footer-img-sgv-li">
+            <a href="#" class="redes-footer-svg-hover:hover">
+              <svg class="instragram-footer-svg">
+                <use href="./images/icons.svg#facebook-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- linkedin-->
+          <li class="footer-img-sgv-li">
+            <a href="#" class="redes-footer-svg-hover:hover">
+              <svg class="instragram-footer-svg ">
+                <use href="./images/icons.svg#linkedin-footer"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <!-- endfooter -->
+</body>
+
+</html>
