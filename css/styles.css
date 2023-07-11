@@ -4,7 +4,6 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
 :root {
   --body-color: #e5e5e5;
   --main-color: #ffffff;
@@ -34,13 +33,10 @@ main {
   background-color: var(--main-color);
   width: 1600px;
 }
-
 .container {
   margin: auto;
   width: 1200px;
-  padding: 80px 0px 0px 0px;
 }
-
 /* class header  */
 header {
   margin: auto;
@@ -51,12 +47,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 header a {
   text-decoration: none;
   color: var(--texto-menu);
 }
-
 /* menu principal  */
 .svg-padding {
   margin-left: 30px;
@@ -73,7 +67,6 @@ header a {
   height: 16px;
   margin-right: 5px;
 }
-
 .header-nav-ul {
   display: flex;
   align-items: center;
@@ -90,7 +83,6 @@ header a {
   align-items: center;
   padding-left: 150px;
   color: var(--texto-menu-color);
-  /* background-color: tomato; */
 }
 .header-nav-social LI {
   list-style: none;
@@ -101,12 +93,10 @@ header a {
   color: var(--logo-color-text);
   text-decoration: none;
 }
-
 /* color texto menu redes */
 .text-color {
   color: var(--section-attentin-text-color);
 }
-
 /* pseudaclases de estado  */
 .link:hover,
 .link:focus {
@@ -120,7 +110,6 @@ header a {
 .linkn:hover:focus {
   background-color: hsl(0, 89%, 35%);
 }
-
 /* starts one section  solution  */
 
 h2 {
@@ -132,11 +121,11 @@ h2 {
   width: 1600px;
   height: 600px;
   background-color: var(--section-detalles-color);
-  background-image: url("../images/soluciones.jpg");
+  background-image:linear-gradient(to right,
+  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/soluciones.jpg');
   color: var(--h1-color-white);
   text-align: center;
 }
-
 .h1-title {
   color: var(--h1-color-white);
   font-size: 44px;
@@ -157,76 +146,60 @@ h2 {
   margin-top: 20px;
 }
 
-.button-main:hover {
+.button-main:hover, 
+.button-main:focus{
+  background-color: #2174d4;
+}
+.button-main:active {
   background-color: #2174d4;
 }
 /*end  one section  solution  */
-
-/* start two section attentin to detail */
-h3 {
-  color: var(--titulo-our-team);
-  padding: 20px 0px 10px 0px;
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section-two {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
+/*---------start two section attentin to detail --------------------------------------------------*/
+.title-sect-two{
+  text-align: left;
+  padding-bottom: 20px;
 }
-
-.div-sect-two {
-  width: 25%;
-  height: 255px;
-  margin: 5px;
-}
-.div-sect-two ul{
-  list-style: none;
-}
-
-.img-SVG-detail {
-  background-color: var(--img-svg-details);
-  width: 98%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-}
-
-.div-sect-two > ul >li > p {
+.sect-two-p{
+  width: 270px;
   color: var(--section-attentin-text-color);
-  font-weight: 400px;
+  text-align: left;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 10px; 
 }
-.div-sect-two:hover {
-  background-color: whitesmoke;
-  box-shadow: 0px 4px 4px rgba(143, 135, 135, 0.15);
+.sect-two{
+  width: 1170px;  
+  padding-top: 94px;
 }
-
-.section-two-svg-hove:hover,
-.section-two-svg-hove:focus {
-  width: 170px;
-  height: 81px;
+.sect-two-ul{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: var(--header-color);
-  border: 0px solid #757575;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.img-SVG-detail:hover {
-  background-color: whitesmoke;
-  box-shadow: 0px 4px 4px rgba(143, 135, 135, 0.15);
+.sect-two-ul  li {
+  list-style: none;
+  }
+  .sect-two-ul a {
+    text-decoration: none;
+  }
+.sect-two-li {
+  width: 270px;
+  height: 280px;
+  margin: 12px;
 }
-.section-two-svg {
-  width: 106px;
-  height: 52.83px;
+.sect-two-li:hover,
+.sect-two-li:focus{
+  background-color: #ffffff; 
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
 }
-
-/* end two section attentin to detail */
+/* ------------end two section attentin to detail----------------------- */
 
 /*--star three  section-we-are-dedicated -------------------------------*/
 .title-dedicated {
@@ -244,177 +217,119 @@ h3 {
 .section-three-li {
   padding: 0px 18px 0px 18px;
 }
-.section-three-li:hover,
-.section-three-li:focus {
-  background-color: whitesmoke;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(143, 135, 135, 0.15);
-}
+.sec-3-li:hover,
+.sect-3-li:focus{
+  box-shadow: 0px 3px 3px rgba(129, 7, 7, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 
-/*----end  three  section-we-are-dedicated  ----------------*/
-
-/* --- start four section-aour team ---- */
-.title-our-team {
-  margin: 50px 0px 50px 0px;
 }
-.section-our-team-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  background-color: var(--h1-color-white);
-}
+/*------------end  three  section-we-are-dedicated  -------------------------------------*/
 
-/* .our-team{ */
-.section-four {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5f4fa;
+/* --- start four section-aour team ---- ---------------------------------*/
+.title-sect-4{
+  padding-top: 60px;
+  padding-bottom:40px;
 }
-
-.section-our-team {
-  width: 1185px;
+.sec-four-color{
+  width: 1600px;
+  background-color:var(--img-svg-details);
+}
+.sect-div-4-main{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: var(--img-svg-details);
-  padding-bottom: 50px;
 }
-.div-section-our-team {
-  background-color: #f5ecec;
+.sect-four-our-team-ul {
   text-align: center;
-  margin: 15px;
+  padding: 10px;
+}
+.text-esct-4{
+  text-align: center;
+  color: var(--section-attentin-text-color);
+   padding-bottom: 10px; 
+}
+.sect-four-our-team-ul li {
+  display:inline;
+}
+.sect-four-our-team-ul > li a {
+  text-decoration: none; 
 }
 .img-our-team {
   width: 270px;
   height: 260px;
 }
-
-/* start redes social  four  section our team   */
-
-.card-hover-svg-all-section:hover,
-.card-hover-svg-all-section:focus {
-  background-color: rgb(169, 175, 175);
+/*hover  */
+.sect-4-card:hover,
+.sect-4-card:focus {
+  background-color: whitesmoke;
   border: 0px solid #757575;
   box-shadow: 0px 3px 3px rgba(129, 7, 7, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-
-.section-our-team-ul-img-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--h1-color-white);
-  padding-top: 8px;
-}
-.section-our-team-ul-img-svg li {
-  list-style: none;
-  margin: 10px;
-  /* background-color: #757575; */
-}
-
-.instragram-sect-4 {
+/* images SVG network  */
+.sect-4-instragram-svg {
   width: 44px;
   height: 44px;
-  background-color: white;
+  margin-right: 10px;
 }
-
-.twiter-sect-4 {
-  background-color: white;
+.sect-4-tw-fb-link-svg {
   width: 20px;
   height: 20px;
-}
-
-.facebook-sect-4 {
-  background-color: white;
-  width: 20px;
-  height: 20px;
-}
-
-.linkedin-sect-4 {
-  background-color: white;
-  width: 20px;
-  height: 20px;
-}
-
-/* end redes social  */
-
-/* --- end  four section-aour team ---- */
-
-/* --- start five section-aour team ---- */
-
-.title-customer {
-  color: var(--texto-menu-color);
-  margin: 50px;
-}
-.customer {
-  padding: 0px 0px 90px 0px;
-}
-.section-regular-customer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.section-regular-customer-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-.section-regular-customer-li {
-  width: 170px;
-  height: 81px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--header-color);
+  text-align: center;
   margin: 10px;
-  border: 1px solid #757575;
 }
+/* ---end four section-aour team ---- ---------------------------------*/
 
-/*start logo five section  regular customer */
-
-.section-5-customer-svg {
-  width: 106px;
-  height: 52.83px;
+/* ---start  section 5   regular customer ---- ---------------------------------*/
+.sect-5-color{
+  background-color: var(--header-color);
+  border: solid 2px;
 }
-
-.section-5-customer-svg-hover:hover,
-.section-5-customer-svg-hover:focus {
-  /* Width: 170px;
-  Height: 81px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.sect-5-customer-ul {
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+margin: 40px;
 }
+.sect-5-customer-ul li{
+  margin: 13px;
+}
+.sect-5-li {
+  text-align: center;
+  width:170px;
+  height:81px;
+  margin: 10px;
+}
+.sect-5-svg{
+  text-align: center;
+  width:170px;
+  height:81px;
+}
+/*hover  */
+.sect-5-hover:hover,
+.sect-5-hover:focus {
+  background-color: whitesmoke;
+  border: 0px solid white;
+  box-shadow: 0px 3px 3px rgba(227, 222, 222, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(228, 223, 223, 0.12);
+  border-radius: 4px;
+}
+/* ---end  section 5   regular customer ---- ---------------------------------*/
 
-/*end  logo  five section   regular customer  */
-
-/* end   five section regular customer  */
 
 /* --------------START STYLES PAGE FORTAFOLIO ------------------------------------------------------- */
 
 /* ------start style page Portafolio -------------------------------------------------------------*/
 .section-buttons-ul {
-  /* background-color: yellow; */
-  display: flex;
-  /* permite que los elementos queden en fila */
-  align-items: center;
-  /* centra el menu de forma y */
-  justify-content: center;
-  /* central en contendo*/
-  /* margin: 10px 0px 10px 0px; */
-  padding: 30px 60px 0px 60px;
-  font-size: 14px;
-  line-height: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px 60px 0px 60px;
+font-size: 14px;
+line-height: 24px;
 }
 
 .section-buttons-ul li {
@@ -434,10 +349,7 @@ h3 {
   border-radius: 4px;
   padding: 8px 17px 8px 17px;
 }
-
 /* ----pseudaclases buttons -----------------------*/
-/* .link {color: var(--texto-menu-color);} */
-/* pseudaclases de estado  */
 .buttons-li:hover,
 .buttons-li:focus {
   background-color: var(--logo-color-text);
@@ -446,18 +358,14 @@ h3 {
   border-radius: 4px;
   color: var(--h1-color-white);
 }
-
 .link:active {
   color: var(--logo-color-text);
 }
-
-/* .link:visited {
-  color: var(--logo-color-text);
-} */
-
 /* ----------start secction  one -two -three ----- */
 
 .div-main-portafolio {
+  margin: auto;
+  width: 1200px;
   padding-top: 50px;
   padding-bottom: 90px;
 }
@@ -481,17 +389,14 @@ h3 {
   margin: 7px;
   border: 1px solid #eeeeee;
 }
-
 .section-two-img {
   width: 370px;
   height: 294px;
 }
-
 .section-two-li:hover,
 .section-two-img:hover {
   background-color: whitesmoke;
 }
-
 .section-two-li > p {
   color: var(--section-attentin-text-color);
 }
@@ -500,98 +405,57 @@ h3 {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-
-/* -------------end------------------------- */
+/* -------------end- portafolio---------------------------------------------------------------------------- */
 
 /* ---------start footer   ------------------------------------------------------------------------ */
 footer {
   margin: auto;
-  margin-top: 0; 
-  height: 255px;
   width: 1600px;
   background-color: var(--footer-color-text1);
-}
-.footer-address-ul {
-  list-style: none;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
-.footer-address-li {
-  list-style: none;
+.footer-ul li{
+ text-decoration: none;
+ list-style: none;
+ padding-top: 6px;
+}
+.footer-ul a{
   text-decoration: none;
-  margin: 7px;
-}
-
-.footer-address-li-address {
+ }
+.footer-text{
   color: var(--h1-color-white);
 }
-
-.footer-address-li > a {
-  text-decoration: none;
-
+.footer-info-whatsapp {
+  color: var(--footer-color-text2);
 }
-
-.li-info-whatsapp {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-address-li > a:hover,
-.footer-address-li > a:focus {
-  color: var(--logo-color-text);
-}
-
-.footer-address-li:active {
-  color: var(--logo-color-text);
-}
-
-.footer-social-networks-ul {
-  display: flex;
-  flex-direction: row;
-  margin-left: 80px;
-  list-style: none;
-}
-
-.footer-text {
-  color: var(--h1-color-white);
-  line-height: 16.41px;
-  margin-left: 80px;
-}
-
-.footer-text-h:hover,
-.footer-text-h:focus {
-  color: var(--logo-color-text);
-}
-
-.footer-img-sgv-li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  padding-right: 16px;
-}
-
-/* start  redes social - footer  */
-.redes-footer-svg-hover:hover,
-.redes-footer-svg-hover:focus {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.instragram-footer-svg {
-  width: 44px;
-  height: 44px;
-}
-
+/* footer network svg -------- */
 .div-foot{
   display: flex;
   flex-direction: row;
+}
+.div-foot-svg{
+  padding-left: 50px;
+}
+.footer-ul-svg {
+  padding-top: 20px;
 
 }
-/* end redes social - footer  */
+.footer-ul-svg li{
+  display:inline;
+}
+.footer-svg {
+  width: 44px;
+  height: 44px;
+  margin: 5px;
+}
+.footer-svg:hover,
+.footer-svg:focus{
+  background-color: var(--footer-color-text1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
-/* ---------end  footer   --------------- */
+
+
