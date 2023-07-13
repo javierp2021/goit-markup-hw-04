@@ -13,40 +13,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <!-- logo -->
-    <a href="index.html"> WebStudio</a>
-    <!-- menu -->
-    <nav class="header-nav">
-      <ul class="header-nav-ul">
-        <li><a href="index.html" class="link"> Estudio</a></li>
-        <li>
-          <a href="portafolio.html" class=" logo link">PortaFolio</a>
-        </li>
-        <li><a href="index.html" class="link"> Contactos</a></li>
-      </ul>
-    </nav>
-    <!-- contactenos -->
-    <ul class="header-nav-social">
-      <!-- email svg -->
-      <li class="svg-padding ">
-          <a class="link" href="mailto:info@devstudio.com">
-            <svg class="icon-email">
-              <use xlink:href="images/icons.svg#email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-      </li>
-      <!-- cellphon svg -->
-      <li class="svg-padding ">
-        <a href="mailto:info@devstudio.com" class="link ">
-          <svg class="icon-cellphon">
-          <use xlink:href="images/icons.svg#cellphon"></use>
-          </svg>
-          + 52 55 5529 6000
-        </a>
-      </li>
-    </ul>
+  <header class="cabecera">
+    <div class="container div-header">
+        <!-- logo -->
+        <a href="index.html " class= "logotext"> WebStudio</a>
+        <div>
+          <!-- menu -->
+          <nav>
+            <ul class="header-nav-ul">
+              <li>
+                <a href="index.html" class="link">Estudio</a>
+              </li>
+              <li>
+                <a href="portafolio.html" class="link logo">PortaFolio</a>
+              </li>
+              <li><a href="index.html" class="link"> Contactos</a></li>
+            </ul>
+          </nav>
+        </div>
+      <div>
+        <!-- contactenos -->
+        <ul class="header-nav-social">
+          <!-- email svg -->
+          <li class="svg-padding ">
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="icon-email icon-csg-header">
+                <use xlink:href="images/icons.svg#email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <!-- cellphon svg -->
+          <li class="svg-padding ">
+            <a href="mailto:info@devstudio.com" class="link ">
+              <svg class="icon-cellphon icon-csg-header">
+                <use xlink:href="images/icons.svg#cellphon"></use>
+              </svg>
+              + 52 55 5529 6000
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!--main content-->
   <main>
@@ -183,7 +191,7 @@
         <address>
           <ul class="footer-ul">
             <li>
-              <a href="index.html" class="logo "> WebStudio</a>
+              <a href="index.html" class="logo .logo-text "> WebStudio</a>
             </li>
             <li class="">
               <a href="#" class="footer-text">Caiz.Ticomán 500.ciudad de <br> Mexico, CDMX,Mexico</a>
