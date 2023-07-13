@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,43 +13,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <!-- logo -->
-    <a href="index.html" class="logo"> WebStudio</a>
-    <!-- menu -->
-    <nav class="header-nav">
-      <ul class="header-nav-ul">
-        <li>
-          <a href="index.html" class="link">Estudio</a>
-        </li>
-        <li>
-          <a href="portafolio.html" class="link">PortaFolio</a>
-        </li>
-        <li><a href="index.html" class="link"> Contactos</a></li>
-      </ul>
-    </nav>
-    <!-- contactenos -->
-    <ul class="header-nav-social">
-      <!-- email svg -->
-      <li class="svg-padding ">
-        <a class="link" href="mailto:info@devstudio.com">
-          <svg class="icon-email">
-            <use xlink:href="images/icons.svg#email"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-      </li>
-      <!-- cellphon svg -->
-      <li class="svg-padding ">
-        <a href="mailto:info@devstudio.com" class="link ">
-          <svg class="icon-cellphon">
-            <use xlink:href="images/icons.svg#cellphon"></use>
-          </svg>
-          + 52 55 5529 6000
-        </a>
-      </li>
-    </ul>
+  <header class="cabecera">
+    <div class="container div-header">
+      <!-- logo -->
+      <a href="index.html " class="logo logotext"> WebStudio</a>
+      <div>
+        <!-- menu -->
+        <nav>
+          <ul class="header-nav-ul">
+            <li>
+              <a href="index.html" class="link">Estudio</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="link">PortaFolio</a>
+            </li>
+            <li><a href="index.html" class="link"> Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <!-- contactenos -->
+        <ul class="header-nav-social">
+          <!-- email svg -->
+          <li class="svg-padding ">
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="icon-email icon-csg-header">
+                <use xlink:href="images/icons.svg#email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <!-- cellphon svg -->
+          <li class="svg-padding ">
+            <a href="mailto:info@devstudio.com" class="link ">
+              <svg class="icon-cellphon icon-csg-header">
+                <use xlink:href="images/icons.svg#cellphon"></use>
+              </svg>
+              + 52 55 5529 6000
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!-- main content -->
   <main>
@@ -66,13 +74,13 @@
     </section>
     <!-- end  one section  section solution-->
     <!-- start two  section    -->
-    <section class="container sect-two">
-      <div class="p">
+    <section>
+      <div class=" container sect-two">
         <ul class="sect-two-ul">
           <!-- logo one-->
           <li class="sect-two-li ">
             <a href="#">
-              <svg >
+              <svg>
                 <use xlink:href="images/icons.svg#antena"></use>
               </svg>
             </a>
@@ -103,12 +111,12 @@
                 <use xlink:href="images/icons.svg#tv"></use>
               </svg>
             </a>
-          <h3 class="title-sect-2">PLANIFICACIÒN</h3>
-          <p class="sect-two-p">
-            Usted podrá observar y participar en cada
-            fase del desarrollo y aplicación de
-            soluciones
-          </p>
+            <h3 class="title-sect-2">PLANIFICACIÒN</h3>
+            <p class="sect-two-p">
+              Usted podrá observar y participar en cada
+              fase del desarrollo y aplicación de
+              soluciones
+            </p>
           </li>
           <!-- logo four -->
           <li class="sect-two-li ">
@@ -123,260 +131,272 @@
               asignadas. Es hora de simplificar los procesos laborales
             </p>
           </li>
-  
         </ul>
       </div>
     </section>
     <!-- end two section -->
-
     <!-- start three section-we-are-dedicated -->
-    <section class="container section">
-      <h2 class="title-dedicated">A qué nos dedicamos</h2>
-      <div>
-        <ul class="section-three-ul">
-          <!-- <ul class="section-we-are-dedicated-ul card-hover-svg-all-section "> -->
-          <li class="section-three-li">
-            <a href="#">
-              <img  class="sec-3-li" src="images/box1.svg" alt="aplicaciones de escritorio">
-            </a>
-          </li>
-
-          <li class="section-three-li">
-            <a href="#">
-              <img  class="sec-3-li" src="images/box2.svg" alt="apliocaciones moviles">
-            </a>
-          </li>
-
-          <li class="section-three-li">
-            <a href="#">
-              <img  class="sec-3-li" src="images/box3.svg" alt="solucion de diseño">
-            </a>
-          </li>
-
-        </ul>
+    <section>
+      <div class="container section">
+        <h2 class="title-dedicated">A qué nos dedicamos</h2>
+        <div>
+          <ul class="section-three-ul">
+            <!-- <ul class="section-we-are-dedicated-ul card-hover-svg-all-section "> -->
+            <li class="section-three-li">
+              <a href="#">
+                <img class="sec-3-li" src="images/box1.svg" alt="aplicaciones de escritorio">
+              </a>
+            </li>
+    
+            <li class="section-three-li">
+              <a href="#">
+                <img class="sec-3-li" src="images/box2.svg" alt="apliocaciones moviles">
+              </a>
+            </li>
+            <li class="section-three-li">
+              <a href="#">
+                <img class="sec-3-li" src="images/box3.svg" alt="solucion de diseño">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- end three section-we-are-dedicated -->
     <!-- start four  section our team -->
-    <section class="sec-four-color  container">
-      <h2 class="title-sect-4">Nuestro Equipo</h2>
-      <div class="sect-div-4-main">
-        <!-- team  one  -->
-        <div>
-          <ul class="sect-four-our-team-ul sect-4-card ">
-            <li class="">
-              <img src="images/andresCubo.jpg" alt="Diseñador de Productos" class="img-our-team">
-              <h3>Andrés Cubo</h3>
-              <p class="text-esct-4">Diseñador de Productos</p>
+    <section>
+      <div class="section sec-four-color  ">
+        <h2 class="title-sect-4">Nuestro Equipo</h2>
+        <ul class="all-cards-ul">
+            <!-- team  one  -->
+            <li class="sect-four-li-our-team sect-4-card">
+                    <img src="images/andresCubo.jpg" alt="Diseñador de Productos" class="img-our-team">
+                      <div class="sect-four-title-team">
+                        <h3>Andrés Cubo</h3>
+                      <p class="text-esct-4">Diseñador de Productos</p>
+                    </div>
+                  <!-- social networks one  -->
+                  <ul class="social-networks">
+                    <li class="instagram">
+                      <a href="#" class="">
+                        <svg class="sect-4-img-svg">
+                          <use xlink:href="images/icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="witer">
+                      <a href="#" class="">
+                        <svg class="sect-4-img-svg">
+                          <use xlink:href="images/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="facebook">
+                      <a href="#" class="">
+                        <svg class="sect-4-img-svg">
+                          <use xlink:href="images/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="linkeding ">
+                      <a href="#" class="">
+                        <svg class="sect-4-img-svg">
+                          <use xlink:href="images/icons.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
             </li>
-            <!--  start social networks -->
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-instragram-svg">
-                  <use xlink:href="images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- team  two  -->
-        <div>
-          <ul class="sect-four-our-team-ul sect-4-card ">
-            <li class="">
-              <img src="images/CarlaPalacios.jpg" alt="Desarrolladora Frontend" class="img-our-team">
-              <h3>Carla Palacios</h3>
-              <p class="text-esct-4">Desarrolladora Frontend</p>
-            </li>
-            <!--  start social networks -->
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-instragram-svg">
-                  <use xlink:href="images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- team  three  -->
-        <div>
-          <ul class="sect-four-our-team-ul sect-4-card ">
-            <li class="">
-              <img src="images/MarioDorado.jpg" alt="Markenting" class="img-our-team">
-              <h3>Mario Dorado</h3>
-              <p class="text-esct-4">Markenting</p>
-            </li>
-            <!--  start social networks -->
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-instragram-svg">
-                  <use xlink:href="images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- team  four  -->
-        <div>
-          <ul class="sect-four-our-team-ul sect-4-card ">
-            <li class="">
-              <img src="images/pabloMijangos.jpg" alt="Diseñador IU" class="img-our-team">
-              <h3>Pablo Mijangos</h3>
-              <p class="text-esct-4">Diseñador IU</p>
-            </li>
-            <!--  start social networks -->
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-instragram-svg">
-                  <use xlink:href="images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="#" class="">
-                <svg class="sect-4-tw-fb-link-svg">
-                  <use xlink:href="images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- end  -->
+              <!-- end team one  -->
+              <!-- star team  two  -->
+              <li class="sect-four-li-our-team sect-4-card">
+                <img src="images/CarlaPalacios.jpg" alt="Desarrolladora Frontend" class="img-our-team ">
+                <div class="sect-four-title-team">
+                  <h3>Carla Palacios</h3>
+                  <p class="text-esct-4">Desarrolladora Frontend</p>
+                </div>
+                <!-- social networks two  -->
+                <ul class="social-networks">
+                  <li class="instagram">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="witer">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="facebook">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="linkeding ">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end team two  -->
+              <!-- star team  three  -->
+              <li class="sect-four-li-our-team sect-4-card ">
+                <img src="images/MarioDorado.jpg" alt="Markenting" class="img-our-team">
+                <div class="sect-four-title-team">
+                  <h3>Mario Dorado</h3>
+                  <p class="text-esct-4">Markenting</p>
+                </div>
+                <!-- social networks three  -->
+                <ul class="social-networks">
+                  <li class="instagram">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="witer">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="facebook">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="linkeding ">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end team three  -->
+              <!-- star team  four  -->
+              <li class="sect-four-li-our-team sect-4-card ">
+                <img src="images/pabloMijangos.jpg" alt="Diseñador IU" class="img-our-team">
+                <div class="sect-four-title-team">
+                  <h3>Pablo Mijangos</h3>
+                  <p class="text-esct-4">Diseñador IU</p>
+                </div>
+                <!-- social networks four -->
+                <ul class="social-networks">
+                  <li class="instagram">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="witer">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="facebook">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="linkeding ">
+                    <a href="#" class="">
+                      <svg class="sect-4-img-svg">
+                        <use xlink:href="images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <!-- end cards our team -->
+              </li>
+
+
+
+             
+
+        </ul>
       </div>
+    
     </section>
     <!-- end  four section  our team -->
 
     <!-- start  five section   regular customer -->
-    <section class="container section sect-5-colorc">
-      <h2>Clientes Regulares </h2>
-      <div>
-        <ul class="sect-5-customer-ul">
-          <!-- logo1 -->
-          <!-- <li class="sect-5-cardt sect-5-hover "> -->
-          <li class="sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo1"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- logo2 -->
-          <li class="sect-5-li sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo2"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- logo3 -->
-          <li class="sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo3"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- logo4-->
-          <li class="sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo4"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- logo 5-->
-          <li class="sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo5"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- logo4 6-->
-          <li class="sect-5-svg sect-5-hover">
-            <a href="#">
-              <svg class="sect-5-svg">
-                <use xlink:href="images/icons.svg#logo6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+    <section>
+      <div class="container section">
+        <h2>Clientes Regulares </h2>
+        <div class="">
+          <ul class="sect-5-customer-ul">
+            <!-- logo1 -->
+            <!-- <li class="sect-5-cardt sect-5-hover "> -->
+            <li class="sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- logo2 -->
+            <li class="sect-5-li sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- logo3 -->
+            <li class="sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- logo4-->
+            <li class="sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- logo 5-->
+            <li class="sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- logo4 6-->
+            <li class="sect-5-svg sect-5-hover">
+              <a href="#">
+                <svg class="sect-5-svg">
+                  <use xlink:href="images/icons.svg#logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
   </main>
@@ -387,7 +407,7 @@
         <address>
           <ul class="footer-ul">
             <li>
-              <a href="index.html" class="logo "> WebStudio</a>
+              <a href="index.html" class=" logo logotext"> WebStudio</a>
             </li>
             <li class="">
               <a href="#" class="footer-text">Caiz.Ticomán 500.ciudad de <br> Mexico, CDMX,Mexico</a>
@@ -444,4 +464,5 @@
   </footer>
   <!-- endfooter -->
 </body>
+
 </html>
