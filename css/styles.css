@@ -39,7 +39,7 @@ main {
 /* class header  */
 .cabecera{
   margin: auto;
-  width: 1600px; 
+  width: 1600px;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -84,29 +84,14 @@ header a {
   /* padding-left: 10px; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  .page-active {
-  color: var( --logo-color-text); 
-} 
+  color: var( --logo-color-text);
+}
 .logo-text{
-  color: var( --logo-color-text); 
+  color: var( --logo-color-text);
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px; 
+  font-size: 26px;
   Line-height:30.52px;
 }
 /* color texto menu redes */
@@ -120,7 +105,7 @@ header a {
   color: var(--logo-color-text);
   border: 0px solid #2196F3;
   /* fill: #03a9f4; */
-  stroke:#2196F3; 
+  stroke:#2196F3;
 }
 .link:active {
   color: var(--logo-color-text);
@@ -172,7 +157,7 @@ h2 {
   margin-top: 20px;
 }
 
-.button-main:hover, 
+.button-main:hover,
 .button-main:focus{
   background-color: #337fd7;
 }
@@ -196,10 +181,10 @@ h2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 .sect-two{
-  width: 1170px;  
+  width: 1170px;
   padding-top: 94px;
 }
 .sect-two-ul{
@@ -262,32 +247,38 @@ h2 {
   background-color:var(--img-svg-details);
 }
 .all-cards-ul{
-  display: inline;  
+  display: inline;
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   gap: 28px;
 }
 .sect-four-li-our-team{
-  display: inline; 
+  display: inline;
   box-shadow: 0px 3px 3px rgba(129, 7, 7, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 .social-networks{
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding:20px;
 }
 .social-networks li{
-  display: inline; 
+  display: inline;
 }
 .social-networks > li a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 .sect-four-title-team{
 display: flex;
 flex-direction: column;
-align-items: center;  
+align-items: center;
 justify-content: center;
 gap: 10px;
 padding-top: 20px;
@@ -304,7 +295,6 @@ padding-top: 20px;
 .sect-4-img-svg {
   width: 20px;
   height: 20px;
-  margin: 10px;
 }
 /*hover  cards  */
 .sect-4-card:hover,
@@ -313,14 +303,32 @@ padding-top: 20px;
   border: 0px solid #757575;
   box-shadow: 0px 3px 3px rgba(129, 7, 7, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08);
 }
+  /* imagenes svg  + hover  imgs SVG */
+.svg-circulo{
+  width: 40px;
+  height: 40px;
+  clip-path: circle();
+  background-color:var(--img-svg-details);
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-circulo:hover{
+  width: 40px;
+  height: 40px;
+  /* clip-path: circle(); */
+  background-color: #03a9ff;
+  /* fill: rgb(255, 255, 255); */
+}
+.svg-half{
+  /* fill: rgb(197, 197, 197); */
+  fill: #AFB1B8;
+}
+.svg-half:hover{
+  fill: rgb(255, 255, 255);
+}
 
-/*hover  imgs SVG */
-.sect-4-svg-hover:hover,
-.sect-4-svg-hover:focus {
-  color: var(--logo-color-text);
-  stroke:#03a9ff;
-  /* stroke:white; */
-  }
 /* ---end four section-aour team ---- ---------------------------------*/
 
 /* ---start  section 5   regular customer ---- ---------------------------------*/
@@ -334,29 +342,34 @@ align-items: center;
 justify-content: center;
 list-style: none;
 margin: 40px;
+gap: 28px;
 }
-.sect-5-customer-ul li{
-  margin: 13px;
+
+/*------images svg --------------------- */
+.sect-5-img-svg {
+  width: 170px;
+  height: 81px;
 }
-.sect-5-li {
-  text-align: center;
-  width:170px;
-  height:81px;
-  margin: 10px;
+.svg-rectangulo{
+  width: 169px;
+  height: 80px;
+  clip-path: rect();
+  background-color:#fff;
+  border: solid 2px #AFB1B8;
+  border-radius: 4PX;
+  fill: #AFB1B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sect-5-svg{
-  text-align: center;
-  width:170px;
-  height:81px;
-}
-/*hover  */
-.sect-5-hover:hover,
-.sect-5-hover:focus {
-  color: var(--logo-color-text);
-  stroke-width: 1px;
-  stroke:#03a9ff;
+.svg-rectangulo:hover{
+  border: solid 2px #2196F3;
   fill: #2196F3;
 }
+.svg-set-5-half{
+  fill: #AFB1B8;
+}
+
 /* ---end  section 5   regular customer ---- ---------------------------------*/
 /* --------------START STYLES PAGE FORTAFOLIO ------------------------------------------------------- */
 
@@ -450,53 +463,81 @@ footer {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+/* logo foot  */
+.text-logo-foot {
+  color: var(--logo-color-text);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+}
+.text-logo-foot{
+text-decoration: none;
+}
 
 .footer-ul li{
  text-decoration: none;
  list-style: none;
- padding-top: 6px;
+ padding-top: 6px; 
 }
 .footer-ul a{
   text-decoration: none;
  }
 .footer-text{
   color: var(--h1-color-white);
+  /* padding-top: 10px;  */
 }
 .footer-info-whatsapp {
   color: var(--footer-color-text2);
 }
-.fo-text-logo {
-  color: var(--h1-color-white);
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px; 
-}
-/* footer network svg -------- */
-.div-foot{
+
+.div-foot-main{
+  width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: row;
+  gap: 50px;
 }
+/* footer network svg -------- */
 .div-foot-svg{
-  padding-left: 50px;
-  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.footer-ul-svg {
-  padding-top: 20px;
-
+.social-networks-footer{
+  display: flex;
+  flex-direction: row;
+  padding-top:20px; 
+  gap: 10px;
 }
-.footer-ul-svg li{
+.social-networks-footer li{
   display:inline;
 }
-.footer-svg {
-  width: 44px;
-  height: 44px;
-  margin: 5px;
+ /* imagenes svg  + hover  imgs SVG */
+ .svg-circulo-foot{
+  width: 40px;
+  height: 40px;
+  clip-path: circle();
+  /* background-color: #43444D; */
+  background-color: rgb(67,68,77);
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.svg-circulo-foot:hover{
+  width: 40px;
+  height: 40px;
+  background-color: #03a9ff;
+  /* fill: rgb(255, 255, 255); */
+}
+.svg-half-foot{
+  /* fill: rgb(197, 197, 197); */
+  fill: #ffffff;
 
-/* hover img svg  */
-.footer-svg-hover:hover,
-.footer-svg-hover:focus {
-  color: var(--logo-color-text);
-  stroke:#03a9ff;
+}
+.svg-half-foot:hover{
+  fill: rgb(255, 255, 255);
 }
 
